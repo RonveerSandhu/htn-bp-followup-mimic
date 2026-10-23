@@ -2,7 +2,7 @@
 
 Analysis code for:
 
-> Sandhu R, Asghar S, Abu Hashish M, Ye J. *Predicting the Absence of Recorded Blood Pressure Follow-up in Adults With Hypertension: Development and Internal Validation.* 
+> Sandhu R, Asghar S, Abu Hashish M, Ye J. *Predicting the Absence of Recorded Blood Pressure Follow-up in Adults With Hypertension: Development and Internal Validation.* (under review)
 
 This repository contains the code used to build the study cohorts, fit the models, and produce every table and figure in the paper and supplement. **It contains no patient data.**
 
@@ -36,7 +36,7 @@ The notebooks were written for Google Colab with Google Drive.
 
 Patient-level intermediate files (parquet, fitted models) are written to `DATA_DIR`, which must sit **outside** the repository; `.gitignore` blocks them. Only aggregate tables are written to `results/`.
 
-Approximate run times on a standard Colab runtime: notebooks 01–03, 5–10 minutes each; 04, 30–45 minutes; 05, one to several hours (the 5- and 6-class trajectory models); 06 and 06b, 1.5–3 hours each. Notebooks 05, 06, and 06b save their work as they go, so a rerun after a disconnect picks up where it stopped.
+Approximate run times on a standard Colab runtime: notebooks 01–03, 5–10 minutes each; 04, 30–45 minutes; 05, one to several hours (the 5- and 6-class trajectory models); 06 and 06b, 1.5–3 hours each; 07, a few minutes; 08, 10–20 minutes. Notebooks 05, 06, and 06b save their work as they go, so a rerun after a disconnect picks up where it stopped.
 
 **Results summary.** Each notebook ends with a block that prints the numbers it contributes to the paper.
 
@@ -64,7 +64,7 @@ htn-bp-followup-mimic/
 │   ├── 06b_sensitivity.ipynb
 │   ├── 07_multimorbidity.ipynb
 │   └── 08_final_tables_figures.ipynb
-└── results/                    # aggregate tables only (no patient-level rows)
+└── results/                    # aggregate tables and figures only (no patient-level rows)
 ```
 
 ## Where each result comes from
@@ -75,11 +75,11 @@ htn-bp-followup-mimic/
 | `02_contact_and_landmark` | Unique contact days per 91-day quarter, longest gap in contact, day-730 landmark population and day-730-information sample | Figure 1A (association branch); Table S9 (association rows) |
 | `03_prediction_sample` | First systolic reading > 140 mmHg, 90-day coverage and survival rules, 62 features cut at the prediction date | Figure 1A (prediction branch); Table S9 (prediction rows) |
 | `04_prediction_models` | 60/20/20 split, tuning, isotonic recalibration, test-set evaluation, nested cross-validation, outreach at fixed capacity, decision curve, subgroup audit, group-specific thresholds, alternative targets, Shapley values | Table 2A–B; Figure 2A; Figure S1; Tables S5–S6 |
-| `05_trajectories` | Group-based trajectory models (1–6 classes, R `lcmm`), class selection, rule-based class naming, posterior probabilities | Table S2; Figure 3A |
-| `06_association` | Pre-index covariates, multiple imputation (m = 30), cause-specific Cox, Fine–Gray, doubly robust, balance, gap spline and cutoffs, Uno's C, Gray's tests, proportional hazards, minimum detectable hazard ratios | Table 4; Table S7; Figure 3B–D; Figure S2 |
-| `06b_sensitivity` | All Table S3 sensitivity analyses (other landmark samples, censoring weights, missing-data approaches), outcome components, heart-failure checks | Table S3; Table S8; Figure S3 |
+| `05_trajectories` | Group-based trajectory models (1–6 classes, R `lcmm`), class selection, rule-based class naming, posterior probabilities | Table S2; data for Figure 3A |
+| `06_association` | Pre-index covariates, multiple imputation (m = 30), cause-specific Cox, Fine–Gray, doubly robust, balance, gap spline and cutoffs, Uno's C, Gray's tests, proportional hazards, minimum detectable hazard ratios | Table 4; Table S7; data for Figure 3B–D and Figure S2 |
+| `06b_sensitivity` | All Table S3 sensitivity analyses (other landmark samples, censoring weights, missing-data approaches), outcome components, heart-failure checks | Table S3; Table S8; data for Figure S3 |
 | `07_multimorbidity` | Elixhauser co-occurrence network, Louvain communities, phenotype assignment, χ² / Cramér's V, interaction test | Supplementary Methods and Results: multimorbidity |
-| `08_final_tables_figures` | Prediction-sample baseline table, subgroup confidence intervals, denominator reconciliation, final figures, numbers reported only in the text | Table 1; Table 3; Table S4; Table S9; Figures 1 and 2 |
+| `08_final_tables_figures` | Prediction-sample baseline table, subgroup confidence intervals, denominator reconciliation, every figure, all tables in one workbook (`paper_tables.xlsx`) | Table 1; Table 3; Table S4; Table S9; Figures 1–3 and S1–S3 |
 
 ## Software
 
