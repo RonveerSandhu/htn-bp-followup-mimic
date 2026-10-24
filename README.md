@@ -2,7 +2,7 @@
 
 Analysis code for:
 
-> Sandhu R, Asghar S, Abu Hashish M, Ye J. *Predicting the Absence of Recorded Blood Pressure Follow-up in Adults With Hypertension: Development and Internal Validation.* 
+> Sandhu R, Asghar S, Abu Hashish M, Ye J. *Predicting the Absence of Recorded Blood Pressure Follow-up in Adults With Hypertension: Development and Internal Validation.* (under review)
 
 This repository contains the code used to build the study cohorts, fit the models, and produce every table and figure in the paper and supplement. **It contains no patient data.**
 
