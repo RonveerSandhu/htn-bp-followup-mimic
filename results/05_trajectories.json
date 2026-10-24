@@ -1,0 +1,47 @@
+{
+  "fit_population_n": 15200,
+  "k_selected": 4,
+  "class_order": [
+    "Minimal Contact",
+    "Declining Contact",
+    "Rising Contact",
+    "Sustained Contact"
+  ],
+  "class_numbers_to_names": {
+    "2": "Minimal Contact",
+    "4": "Sustained Contact",
+    "3": "Declining Contact",
+    "1": "Rising Contact"
+  },
+  "alternative": {
+    "k": 5,
+    "class_order": [
+      "Minimal Contact",
+      "Declining Contact",
+      "Rising Contact",
+      "Sustained Moderate Contact",
+      "Sustained High Contact"
+    ],
+    "class_numbers_to_names": {
+      "3": "Minimal Contact",
+      "4": "Sustained Moderate Contact",
+      "2": "Sustained High Contact",
+      "5": "Declining Contact",
+      "1": "Rising Contact"
+    },
+    "class_sizes": {
+      "Minimal Contact": 6610,
+      "Declining Contact": 3431,
+      "Rising Contact": 2550,
+      "Sustained Moderate Contact": 2232,
+      "Sustained High Contact": 377
+    }
+  },
+  "class_sizes": {
+    "Minimal Contact": 7569,
+    "Declining Contact": 3413,
+    "Rising Contact": 2679,
+    "Sustained Contact": 1539
+  },
+  "maxpost_lt_070_pct": 23.00657894736842
+}

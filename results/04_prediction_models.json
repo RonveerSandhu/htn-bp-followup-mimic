@@ -1,0 +1,64 @@
+{
+  "lr_C": 0.021544346900318832,
+  "xgb_best": {
+    "learning_rate": 0.03,
+    "max_depth": 5,
+    "min_child_weight": 1,
+    "n_estimators": 200
+  },
+  "nested_fold_best": [
+    {
+      "learning_rate": 0.03,
+      "max_depth": 6,
+      "min_child_weight": 1,
+      "n_estimators": 200
+    },
+    {
+      "learning_rate": 0.03,
+      "max_depth": 6,
+      "min_child_weight": 5,
+      "n_estimators": 200
+    },
+    {
+      "learning_rate": 0.03,
+      "max_depth": 6,
+      "min_child_weight": 5,
+      "n_estimators": 200
+    },
+    {
+      "learning_rate": 0.03,
+      "max_depth": 4,
+      "min_child_weight": 5,
+      "n_estimators": 200
+    },
+    {
+      "learning_rate": 0.03,
+      "max_depth": 4,
+      "min_child_weight": 1,
+      "n_estimators": 200
+    }
+  ],
+  "nested": {
+    "auroc": 0.7461637953672565,
+    "auroc_lo": 0.7408753319948176,
+    "auroc_hi": 0.7514797588870634,
+    "auprc": 0.5784020895082936,
+    "auprc_lo": 0.569266769592906,
+    "auprc_hi": 0.5885269964884275,
+    "cal_intercept": -0.0002802549788202196,
+    "cal_slope": 0.9790861007393662
+  },
+  "prevalence_brier": 0.2284067067941868,
+  "top20_threshold_raw": 0.5531292796134949,
+  "overall_detection": 0.35177539223782,
+  "flagged_single": 0.20001939111886755,
+  "flagged_race_specific": 0.20040721349621873,
+  "dca_xgb_range": [
+    0.05,
+    0.7
+  ],
+  "dca_xgb_range_lower_band": [
+    0.15,
+    0.58
+  ]
+}

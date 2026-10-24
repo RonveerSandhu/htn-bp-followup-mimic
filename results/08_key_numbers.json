@@ -1,0 +1,36 @@
+{
+  "prediction_sample": {
+    "n": 30942,
+    "no_bp": 10899,
+    "median_days_index_to_prediction": 22
+  },
+  "qualifying_reading": {
+    "sbp_mean": 152.4,
+    "dbp_mean": 80.7,
+    "min_sbp": 141,
+    "pct_dbp_ge90": 26.7
+  },
+  "no_earlier_readings": {
+    "n": 5928,
+    "pct": 19.2
+  },
+  "earlier_dbp_only_elevated_after_index": {
+    "n": 2997,
+    "pct": 9.7
+  },
+  "competing_90": {
+    "bp": 20311,
+    "death_before_bp": 78,
+    "coverage_ended_first": 102,
+    "none": 10899
+  },
+  "figure1_landmark_exclusions": {
+    "Died by day 730": 3459,
+    "Survival at 730 not confirmed": 14361,
+    "Alive at 730, no later record": 1476,
+    "CV hospitalization, days 1\u2013730": 1048,
+    "CV hospitalization before index": 1281,
+    "No follow-up after day 730": 358
+  },
+  "day730_sample_also_in_primary": 6432
+}

@@ -1,0 +1,85 @@
+{
+  "network_cohort_n": 17887,
+  "n_nodes": 28,
+  "n_edges": 31,
+  "phi_cut": 0.1,
+  "phenotype_definitions": {
+    "Malignancy": [
+      "metacanc",
+      "solidtum"
+    ],
+    "Neuro-psychiatric-hepatic": [
+      "alcohol",
+      "coag",
+      "depre",
+      "drug",
+      "fed",
+      "ld",
+      "ond",
+      "para",
+      "wloss"
+    ],
+    "Cardio-renal-metabolic": [
+      "carit",
+      "chf",
+      "cpd",
+      "diabc",
+      "obes",
+      "pcd",
+      "pvd",
+      "rf",
+      "valv"
+    ]
+  },
+  "rebuilt_communities_multi": [
+    [
+      "diabc",
+      "fed",
+      "pvd",
+      "rf"
+    ],
+    [
+      "ond",
+      "para"
+    ],
+    [
+      "carit",
+      "chf",
+      "cpd",
+      "obes",
+      "valv"
+    ],
+    [
+      "alcohol",
+      "coag",
+      "depre",
+      "drug",
+      "ld",
+      "wloss"
+    ],
+    [
+      "metacanc",
+      "solidtum"
+    ]
+  ],
+  "phenotype_n": {
+    "Low structure": 3208,
+    "Cardio-renal-metabolic": 6116,
+    "Neuro-psychiatric-hepatic": 4852,
+    "Malignancy": 1024
+  },
+  "phenotype_events": {
+    "Low structure": 71,
+    "Cardio-renal-metabolic": 397,
+    "Neuro-psychiatric-hepatic": 161,
+    "Malignancy": 35
+  },
+  "chi2": 361.306890884395,
+  "chi2_df": 9,
+  "chi2_p": 2.426453025066749e-72,
+  "cramers_v": 0.08901346375645058,
+  "interaction_lr": 14.663147068244143,
+  "interaction_df": 9,
+  "interaction_p": 0.10061410899502575,
+  "interaction_cells_lt10_events": 3
+}

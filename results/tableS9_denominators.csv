@@ -1,0 +1,14 @@
+Part,Analysis,Starting sample,Coverage required,"Survival, death, and follow-up rules",n,Outcome events
+Prediction,No recorded BP within 90 days (primary),"32,101 with a first systolic reading >140 mmHg","90 days after the prediction date (965 without: 711 with no data after it, 254 whose data ended within 90 days)",Died within 90 days excluded (194),"30,942","10,899 with no recorded BP"
+Prediction,No recorded BP within 30 days,"31,390 with data after the prediction date",30 days (78 without),Died within 30 days excluded (34),"31,278","18,608"
+Prediction,No recorded BP within 180 days,"31,390 with data after the prediction date",180 days (559 without),Died within 180 days excluded (750),"30,081","6,878"
+Prediction,No recorded BP within 270 days,"31,390 with data after the prediction date","270 days (1,055 without)","Died within 270 days excluded (1,208)","29,127","5,172"
+Prediction,No recorded BP within 365 days,"31,390 with data after the prediction date","365 days (1,971 without)","Died within 365 days excluded (1,627)","27,792","4,378"
+Prediction,"No recorded BP within 90 days, deaths before BP counted","31,390",90 days,Death before any BP reading counted as an outcome,"31,016","10,973"
+Prediction,Death as a competing event (Table S5B),"32,101",Any data after the prediction date (711 without),Death before a BP reading is a competing event; censored at the end of coverage,"31,390","BP 20,311; death before BP 78; coverage ended first 102"
+Association,At-index cohort,"48,628 eligible at index","Through day 730 (11,445 without)",—,"37,183",—
+Association,Landmark population (primary),"37,183",Through day 730,"Alive at day 730, confirmed by any record after day 730; no CV hospitalization before index or during days 1–730; follow-up ends at the end of coverage, day 1,460, 365 days after the last hospital or emergency contact, or death","15,200",664 CV hospitalizations
+Association,Day-730-information sample,"37,183",Through day 730,"Alive at day 730 (no recorded death by day 730), confirmed only by hospital or emergency contact during days 366–730 (no later information); 6,432 also in the primary population; follow-up as primary","7,649",318
+Association,Events before index kept,"37,183",Through day 730,"As primary, but patients with a CV hospitalization before index kept (+1,246)","16,446",798
+Association,Complete case,Landmark population,Through day 730,"As primary; eGFR, glycated hemoglobin, and body mass index all observed","4,244",184
+Association,Censoring at end of coverage only,Landmark population,Through day 730,"As primary, but follow-up ends only at the end of coverage, day 1,460, or death","15,200",664

@@ -1,0 +1,40 @@
+{
+  "prediction_rule": "any reading",
+  "first_sbp_gt_140": 32101,
+  "no_data_after_prediction": 711,
+  "data_after_prediction": 31390,
+  "target_30": {
+    "n": 31278,
+    "no_bp": 18608,
+    "data_ended": 78,
+    "died": 34
+  },
+  "target_90": {
+    "n": 30942,
+    "no_bp": 10899,
+    "data_ended": 254,
+    "died": 194
+  },
+  "target_180": {
+    "n": 30081,
+    "no_bp": 6878,
+    "data_ended": 559,
+    "died": 750
+  },
+  "target_270": {
+    "n": 29127,
+    "no_bp": 5172,
+    "data_ended": 1055,
+    "died": 1208
+  },
+  "target_365": {
+    "n": 27792,
+    "no_bp": 4378,
+    "data_ended": 1971,
+    "died": 1627
+  },
+  "competing_risk_90": {
+    "bp": 20311,
+    "death_before_bp": 78
+  }
+}

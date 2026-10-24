@@ -1,0 +1,53 @@
+{
+  "figure1a_flow": [
+    {
+      "step": "At-index cohort",
+      "n": 37183
+    },
+    {
+      "step": "Exclude: died by day 730 (3,459)",
+      "n": 33724
+    },
+    {
+      "step": "Exclude: survival at day 730 not confirmed (14,361)",
+      "n": 19363
+    },
+    {
+      "step": "Exclude: alive at day 730, no later record (1,476)",
+      "n": 17887
+    },
+    {
+      "step": "Exclude: CV hospitalization before index or days 1-730 (2,329)",
+      "n": 15558
+    },
+    {
+      "step": "Exclude: no follow-up after day 730 (358)",
+      "n": 15200
+    }
+  ],
+  "primary_landmark": {
+    "n": 15200,
+    "events": 664,
+    "deaths": 1077,
+    "censored_before_730": 3556
+  },
+  "day730_information_sample": {
+    "n": 7649,
+    "events": 318
+  },
+  "events_before_index_kept": {
+    "n": 16446,
+    "events": 798
+  },
+  "gap_gt_365": {
+    "n": 3777,
+    "events": 146,
+    "deaths": 260
+  },
+  "gap_spline_knots": [
+    76,
+    168,
+    287,
+    717
+  ]
+}

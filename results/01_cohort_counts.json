@@ -1,0 +1,36 @@
+{
+  "flow": [
+    {
+      "step": "Hypertension diagnosis with a later BP reading",
+      "n": 50946
+    },
+    {
+      "step": "Age 18 or older at index",
+      "n": 50946
+    },
+    {
+      "step": "No surgically correctable cause",
+      "n": 50138
+    },
+    {
+      "step": "No death within 90 days of index",
+      "n": 48628
+    }
+  ],
+  "eligible_at_index": 48628,
+  "at_index_cohort": 37183,
+  "status730_at_index_cohort": {
+    "alive: record after day 730": 17887,
+    "survival unknown": 14361,
+    "died by day 730": 3459,
+    "alive: hospital/ED contact days 366-730": 1459,
+    "alive: death recorded after day 730": 17
+  },
+  "rules": {
+    "index_date": "first BP date on or after the first hypertension-coded admission",
+    "coverage": "Dec 31 of (anchor_year + 2020 - upper year of anchor_year_group) >= index + 730 days",
+    "death_capture_days_after_last_hospital_or_ED_contact": 365,
+    "followup_end": "earliest of: end of coverage, day 1460, last hospital/ED contact + 365, death",
+    "rules_not_applied": ">=2 BP dates; >=2 encounters or antihypertensive orders (both use post-index information)"
+  }
+}
