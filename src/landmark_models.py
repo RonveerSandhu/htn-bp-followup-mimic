@@ -7,8 +7,19 @@ import numpy as np
 import pandas as pd
 from scipy.stats import chi2, norm
 
+# class names in display order; notebooks replace this with the order saved by notebook 05
 ORDER = ["Minimal Contact", "Declining Contact", "Rising Contact",
          "Sustained Moderate Contact", "Sustained High Contact"]
+
+
+def set_class_order(order):
+    """Use the class names of the selected trajectory solution (results/05_trajectories.json)."""
+    ORDER[:] = list(order)
+
+
+def key_class():
+    """Contrast reported in Table S3: Sustained Contact (4 classes) or Sustained Moderate Contact (5 classes)."""
+    return "Sustained Moderate Contact" if "Sustained Moderate Contact" in ORDER else "Sustained Contact"
 
 # covariates entered as restricted cubic splines: 4 knots, and 3 knots (only 3 distinct percentiles)
 SPL4 = ["age_index", "sbp_baseline", "egfr", "bmi", "log_enc_prior", "n_antihtn_drugs"]
